@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-544281457936000226
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 9
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shader Graphs_terrain
+  m_Shader: {fileID: -6465566751694194690, guid: e6125193ed47baf428a96c447b4095f7, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: _grassMapPower
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _earthMapPower: 0.25
+    - _edge: 0
+    - _finalStep: 0.36
+    - _fresPower: 0
+    - _grassDensity: 878
+    - _grassLength: 5
+    - _grassLength1: 5
+    - _grassLength2: 7
+    - _grassMapPower: 108.11
+    - _grassPow: 0.2
+    - _grassRot1: 6.02
+    - _grassRot2: 6.58
+    - _mapPower: 0.03
+    - _noiseScaleEarth: 57.2
+    - _noiseScaleGrass: 127.04
+    - _normalNoiseScale: 1838.69
+    - _normalNoiseStrength: 0.85
+    - _normalOffset: 0
+    - _pow: 2.05
+    - _shadowScale: 2.17
+    - _shadowSpeed: 0.16
+    - _steepness: 0
+    - _stepVal: 0.738
+    - _stepVal2: 0.35
+    m_Colors:
+    - _color1: {r: 0.22545159, g: 1, b: 0, a: 0}
+    - _color2: {r: 0.33962262, g: 0.14699005, b: 0, a: 0}
+    - _dirtCol: {r: 0, g: 0, b: 0, a: 0}
+    - _earthColor: {r: 0.3207547, g: 0.1891882, b: 0, a: 0}
+    - _grassCol: {r: 0, g: 0, b: 0, a: 0}
+    - _grassColor: {r: 0.25610265, g: 0.6226415, b: 0, a: 0}
+    - _noiseLimitEarth: {r: 1, g: 0.5, b: 0, a: 0}
+    - _noiseLimitGrass: {r: 0.6, g: 1, b: 0, a: 0}
+    - _noisePosEarth: {r: 2.17, g: 0.5, b: 0, a: 0}
+    - _noisePosGrass: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _rockColor: {r: 0, g: 0, b: 0, a: 0}
+    - _smoothStep: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

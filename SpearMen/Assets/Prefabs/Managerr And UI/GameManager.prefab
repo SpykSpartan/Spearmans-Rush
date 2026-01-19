@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8528135105498642459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1961090417205281738}
+  - component: {fileID: 4584799423282304263}
+  - component: {fileID: 2105167068391092724}
+  - component: {fileID: 3749084027722307557}
+  - component: {fileID: 7825723257297421089}
+  - component: {fileID: 167109880858663837}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1961090417205281738
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8528135105498642459}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.467741, y: -15.339897, z: -6.758759}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4584799423282304263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8528135105498642459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fce028cfd36e345ad7a7fda4d023a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FastTravelManager: {fileID: 2105167068391092724}
+  PlayerMovement: {fileID: 0}
+  PlayerStatics: {fileID: 0}
+  RespawnManger: {fileID: 7825723257297421089}
+  DeathUI: {fileID: 0}
+  WinUI: {fileID: 0}
+  pauseMenuUI: {fileID: 0}
+--- !u!114 &2105167068391092724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8528135105498642459}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13d8e8af35f18c246b6aca3306969798, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  travelPoints:
+  - name: Here
+    location: {fileID: 0}
+    isActive: 1
+  - name: There
+    location: {fileID: 0}
+    isActive: 1
+  - name: Everywhere
+    location: {fileID: 0}
+    isActive: 1
+  - name: Boss1
+    location: {fileID: 0}
+    isActive: 0
+  - name: Boss2
+    location: {fileID: 0}
+    isActive: 0
+  - name: FinalBoss
+    location: {fileID: 0}
+    isActive: 0
+  player: {fileID: 0}
+--- !u!114 &3749084027722307557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8528135105498642459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27f45005a324ce244a2e00ffb2aaae29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingZone: {fileID: 0}
+--- !u!114 &7825723257297421089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8528135105498642459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8af83f7d54e5f0c46b5eb2085eb3f984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  fastTravelManager: {fileID: 2105167068391092724}
+  respawnPointName: Here
+  deathMenuUI: {fileID: 0}
+--- !u!114 &167109880858663837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8528135105498642459}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a33c2fae6186f43b9d7134af2d8435, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 589717128315583184, guid: 6312e308b955e464a82df1f7e8b19a20, type: 3}
+  spawnPoints:
+  - {fileID: 0}
